@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ninetworoad.urls'
+ROOT_URLCONF = 'yumyum.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ninetworoad.wsgi.application'
+WSGI_APPLICATION = 'yumyum.wsgi.application'
 
 
 # Database
