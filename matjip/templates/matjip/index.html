@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- 네이버 지도 API 예시-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=wggfeub68v&callback=CALLBACK_FUNCTION"></script>
+    <!-- 여기까지 Test code -->
+
     <title>Yum Yum Map</title>
     <link rel="stylesheet" href="static/assets/fontawesome-5.5/css/all.min.css" />
     <link rel="stylesheet" href="static/assets/slick/slick.css">
@@ -12,10 +17,9 @@
     <link rel="stylesheet" href="static/assets/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="static/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="static/assets/css/templatemo-style.css" />
-    <!--
-	The Town
-	https://templatemo.com/tm-525-the-town
-	-->
+  
+    
+
   </head>
   <body>    
     <!-- Hero section -->
@@ -202,6 +206,19 @@
           </div>
       </div>
     </section>
+
+<!-- 네이버지도 예시2-->
+<div id="map" style="width:100%;height:400px;"></div>
+
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+</script>
+<!-- 여기까지 -->
 
     <!-- Contact -->
     <section id="contact" class="tm-section-pad-top tm-parallax-2">
